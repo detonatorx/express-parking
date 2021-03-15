@@ -1,0 +1,43 @@
+<div id="menu">
+      <div class="parts">
+        
+          <div class="menu-part"><a href="/contacts">Контакты</a></div>
+          <div class="menu-part"><a href="/" class="selected">Домашняя</a></div>
+          {{!-- <div class="menu-part"><a href="/about">О нас</a></div>
+          <div class="menu-part"><a href="/prices">Цены</a></div> --}}
+
+
+      </div>
+      
+
+
+      <div class="parts">
+        {{#if login}}
+        {{#if customer}}
+
+
+        <div class="menu-part"><a href="/basket">Моя бронь</a></div>
+        <div class="menu-part"><a href="/logout">Выйти</a></div>
+        {{/if}}
+
+        {{#if admin}}
+        <div class="menu-part"><a href="/spaces/new">New!</a></div>
+        <div class="menu-part"><a href="/spaces">Все места</a></div>
+        <div class="menu-part"><a href="/spaces/free">СВОБОДНО</a></div>
+        <div class="menu-part"><a href="/users">Юзвери</a></div>
+        <div class="menu-part"><a href="/logout">Выйти</a></div>
+
+        {{/if}}
+
+
+        {{else}}
+        <div class="menu-part"><a href="/login">Войти</a></div>
+        <div class="menu-part"><a href="/signup">Зарегистрироваться</a></div>
+
+        {{/if}}    
+
+      </div>
+
+      
+    </div> 
+     

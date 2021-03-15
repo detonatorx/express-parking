@@ -1,0 +1,29 @@
+<div id="edit-form">
+  <form class="form-update" data-id={{item._id}}>
+    <label for="num">Номер:</label><input type="text" id="num" name="chNumber" value={{item.number}}><br>
+    <label for="pas">Легковое:</label><select name="chPass" id="pas">
+      <option value="true">Да</option>
+      <option value="false">Нет</option>
+    </select><br> 
+    <label for="inf">Инфо:</label><input type="text" id="inf" name="chInfo" value={{ item.info }}><br>
+    <label for="prc">Цена:</label><input type="text" id="prc" name="chPrice" value={{ item.price }}><br>
+    <label for="book">Бронь:</label><select name="chBooked" id="book">
+      <option value="false">Нет</option>
+      <option value="true">Да</option>
+    </select><br>
+    <label for="occ">Занято:</label><select name="chOccupied" id="occ">
+      <option value="false">Нет</option>
+      <option value="true">Да</option>
+    </select><br>
+    <label for="act">Действует:</label><select name="chActive" id="act">
+      <option value="true">Да</option>
+      <option value="false">Нет</option>
+    </select><br>
+    {{!-- <label for="cust">Клиент:</label><input type="text" id="cust" name="chCustomer" value={{ item.customer.userName}}><br> --}}
+
+    <button>Сохранить</button>
+  </form>
+</div>
+
+
+<script src="/js/edit.js"></script>

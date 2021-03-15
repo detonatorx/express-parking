@@ -1,0 +1,89 @@
+
+
+  {{!-- <div>Hello, {{userName}}</div> --}}
+
+  <div class="info">
+    {{#if login}}
+      <h2>Добрый день, {{userName}}! </h2>
+    {{/if}}
+
+    {{#if goodbye}}
+      {{goodbye}}
+    {{/if}}
+  </div>
+
+  <div class="spaces">
+    {{#each listOfSpaces}}
+
+      <div class='element'>
+        <div class='el'>
+          Место: {{number}}
+        </div>
+
+        <div class="el">
+          {{#if pass}}
+          Легковое
+          {{else}}
+          ГРУЗОВОЕ
+          {{/if}}
+        </div>
+
+        <div class="el">
+          Инфо: {{info}}
+        </div>
+
+        <div class="el">
+          Цена: {{price}}
+        </div>
+        
+        
+        <div class="el">
+        {{#if booked}}
+          <div class="booked">
+            Забронировано: Да
+          </div>
+        {{else}}
+          <div class="notBooked">
+            Забронировано: Нет
+          </div>
+        {{/if}}
+        </div>
+
+        <div class="el">
+        {{#if occupied}}
+          <div class="occupied">
+            Занято: Да
+          </div>
+        {{else}}
+          <div class="notOccupied">
+            Занято: Нет
+          </div>
+        {{/if}}
+        </div>
+
+
+          <div class="el">
+        {{!-- {{#if admin}}
+            <form action="spaces/{{_id}}" method="GET">
+              <a href="/spaces/{{_id}}" class="btn"> Редактировать </a> 
+            </form>
+        {{else}} --}}
+        <div class="button-buy book">
+          <button data-id={{_id}}>Забронировать</button>
+        </div>
+        {{!-- {{/if}} --}}
+          </div>
+
+          <div class="area-{{_id}}">
+             
+          </div>
+
+
+
+      </div>
+
+    {{/each}}
+  </div>
+
+  <script src="/js/book.js"></script>
+

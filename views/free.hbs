@@ -1,0 +1,55 @@
+<div class="spaces">
+    {{#each listOfSpaces}}
+
+      <div class='element'>
+        <div class='el'>
+          Место: {{number}}
+        </div>
+
+        <div class="el">
+          Легковое: {{pass}}
+        </div>
+
+        <div class="el">
+          Инфо: {{info}}
+        </div>
+
+        <div class="el">
+          Цена: {{price}}
+        </div>
+        
+        
+        <div class="el">
+        {{#if booked}}
+          <div class="booked">
+            Забронировано: Да
+          </div>
+        {{else}}
+          <div class="notBooked">
+            Забронировано: Нет
+          </div>
+        {{/if}}
+        </div>
+
+        <div class="el">
+        {{#if occupied}}
+          <div class="occupied">
+            Занято: Да
+          </div>
+        {{else}}
+          <div class="notOccupied">
+            Занято: Нет
+          </div>
+        {{/if}}
+        </div>
+
+        <div class="el">
+
+          <form action="spaces/{{_id}}" method="GET">
+            <a href="/spaces/{{_id}}" class="btn"> Редактировать </a> 
+          </form>
+        </div>
+      </div>
+
+    {{/each}}
+  </div>

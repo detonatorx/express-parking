@@ -1,0 +1,11 @@
+<div>
+  <form id="edit" action="/users/{{_id}}" method="PUT">
+    <input type="email" placeholder="email" name="email" value={{email}}>
+    <input type="text" placeholder="ФИО"  name="userName" value={{userName}}>
+    <select name="deactivated">
+      <option value="false">Включить</option>
+      <option value="true">Отключить</option>
+    </select>
+    <button>Сохранить</button>
+  </form>
+</div>

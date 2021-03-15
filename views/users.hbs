@@ -1,0 +1,29 @@
+<div class="hbs">
+
+  <div class="users">
+    {{#each listOfUsers}}
+
+      <div class='element'>
+        <div class='el'>
+          email: {{email}}
+        </div>
+
+        <div class="el">
+          ФИО: {{userName}}
+        </div>
+
+
+        <div class="el">
+
+          <form action="users/{{_id}}" method="GET">
+            {{!-- <button data-id={{_id}}>Редактировать</button> --}}
+            <a href="/users/{{_id}}" class="btn"> Редактировать </a> 
+            {{!-- <button onclick="document.location='/users/{{_id}}'">Редактировать</button> --}}
+  
+          </form>
+        </div>
+      </div>
+
+    {{/each}}
+  </div>
+</div>

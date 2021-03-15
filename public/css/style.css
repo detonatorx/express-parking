@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* height: 75% */
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url('/css/back.jpg');
+  text-shadow: 1px 1px 2px darkgray, 0 0 1em white; /* Параметры тени */
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+.nav {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+#main-container {
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+  width: 900px;
+  /* min-height: 500px; */
+  opacity: 95%;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin: 0px 100px; */
+  margin-bottom: 50px;
+}
+
+.menu-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+
+
+.parts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+ margin-left: 50px;
+ margin-bottom: 50px;
+}
+
+.users, .spaces {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%
+}
+
+.element {
+  margin: 20px;
+  border: 4px double gray;
+  border-radius: 10px;
+}
+
+.button-buy, #main-container, .common {
+  display: flex;
+  justify-content: center;
+
+}
+
+.el {
+  margin: 10px
+}
+
+.btn {
+  display: inline-block; /* Строчно-блочный элемент */
+  background: #8C959D; /* Серый цвет фона */
+  color: #fff; /* Белый цвет текста */
+  padding: 1rem 1.5rem; /* Поля вокруг текста */
+  text-decoration: none; /* Убираем подчёркивание */
+  border-radius: 5px; /* Скругляем уголки */
+ }
+
+
+input, select {
+  margin-bottom: 10px
+}
+
+.booked {
+  background-color: darkgoldenrod;
+}
+
+.occupied {
+  background-color: deeppink;
+
+}
+
+.notOccupied {
+  background-color: green;
+
+}
+
+.notActive {
+  background-color: yellow;
+
+}
+
+.common {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+
+/* .area {
+  width: 50px;
+  font-size: 14px;
+} */
